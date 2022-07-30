@@ -53,7 +53,7 @@ fig_total = px.bar(
     template="plotly_white",
 )
 fig_total.update_layout(
-    plot_bgcolor="rgba(1,1,1,1)",
+    plot_bgcolor="rgba(0,0,0,0)",
     xaxis=(dict(showgrid=False))
 )
 st.plotly_chart(fig_total, use_container_width=True)
