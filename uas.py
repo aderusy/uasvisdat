@@ -32,7 +32,7 @@ df_selection = df.query(
 st.markdown("""---""")  # markdown
 
 
-st.title("Data Penilangan  2021 - Maret ")
+st.title("Data pelanggaran ")
 
 
 st.markdown("""---""")
@@ -49,7 +49,7 @@ fig_total = px.bar(
     y=total_penindakan.index,
     orientation="h",
     title="<b>Total penindakan pelanggarans Lalu Lintas</b>",
-    color_discrete_sequence=["#00FFFF"] * len(total_penindakan),
+    color_discrete_sequence=["#FFD700"] * len(total_penindakan),
     template="plotly_white",
 )
 fig_total.update_layout(
